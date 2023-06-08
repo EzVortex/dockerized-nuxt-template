@@ -1,0 +1,21 @@
+version: '3'
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+      - "24678:24678"
+    restart: always
+    networks:
+      - frontend-network
+    volumes:
+      - ./:/frontend
+      - /frontend/node_modules
+    command: yarn dev
+
+networks:
+  frontend-network:
+    driver: bridge
