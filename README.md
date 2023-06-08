@@ -1,42 +1,14 @@
-# Nuxt 3 Minimal Starter
+# Dockerized Nuxt Template
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A dockerized nuxt template for local development with working HMR.
 
-## Setup
+## Launch
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
+To start container with the development server on `http://localhost:3000`
 
 ```bash
-npm run dev
+# docker
+docker-compose up [-d]
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Done, you have working Nuxt 3 application within **frontend** container.
